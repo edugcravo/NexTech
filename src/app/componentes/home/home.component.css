@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    position: relative; /* Adicione isso se ainda não estiver definido */
+    z-index: 3; /* Garanta que esteja acima das outras camadas */
+}
+
+.entrega button {
+    border: 1px solid #7000FF;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 40px;
+    position: relative; /* Adicione isso para garantir que o botão esteja no contexto certo */
+    z-index: 3; /* Garanta que esteja acima das imagens de fundo */
+}
+
+.entrega div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #7000FF;
+}
+
+.entrega button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.titulo-principal h1 {
+    color: white;
+    font-size: 64px; /* Tamanho padrão para resoluções grandes */
+    text-align: center;
+    line-height: 69.12px;
+    font-weight: 700;
+    position: relative; /* Garanta que o título esteja no contexto certo */
+    z-index: 1000; /* Garante que o texto esteja acima das imagens e do fundo */
+}
+
+.titulo-principal p {
+    color: #A1A1A1;
+    font-size: 16px; /* Tamanho padrão para resoluções grandes */
+    text-align: center;
+    position: relative; /* Garanta que o parágrafo esteja no contexto certo */
+    z-index: 1000; /* Garante que o texto esteja acima das imagens e do fundo */
+}
+
+.container {
+    background-image: url('../../../assets/imagens/bola_direita.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative; /* Adicione isso para garantir que o container tenha um contexto adequado */
+    z-index: 2; /* Garanta que o container esteja atrás dos textos e imagens de fundo */
+}
+
+.falar button {
+    background: #7000FF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 26px;
+    line-height: 19.2px;
+    font-size: 16px; /* Tamanho padrão para botões */
+    position: relative; /* Adicione isso para garantir que o botão esteja no contexto certo */
+    z-index: 3; /* Garanta que esteja acima das imagens de fundo */
+    margin: 30px 0;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 740px;
+    position: relative;
+    background-image: url('../../../assets/imagens/fundo_total.png');
+    background-position: center;
+    z-index: 1; /* Garanta que a camada de fundo esteja atrás das outras */
+}
+
+.fundo1, .fundo2, .fundo3, .fundo4, .fundo5 {
+    position: absolute;
+    z-index: 1; /* Garanta que as imagens de fundo estejam atrás dos textos */
+}
+
+.fundo1 {
+    border-radius: 24px 0px 0px 0px;
+}
+
+.fundo2 {
+    top: 328px;
+    left: 50px;
+}
+
+.fundo3 {
+    right: 0;
+}
+
+.fundo4 {
+    top: 328px;
+    right: 195px;
+}
+
+.fundo5 {
+    bottom: 0;
+    right: 0;
+}
+
+.icones {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Media queries para textos responsivos */
+
+@media (max-width: 1780px) {
+    .fundo2{
+        opacity: 0.4;
+    }
+
+    .fundo4{
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 1400px) {
+    .fundo3{
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 1200px) {
+    .titulo-principal h1 {
+        font-size: 56px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .titulo-principal p {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .falar button {
+        font-size: 14px; /* Ajusta o tamanho da fonte para botões */
+    }
+}
+
+@media (max-width: 900px) {
+    .titulo-principal h1 {
+        font-size: 48px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .titulo-principal p {
+        font-size: 12px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .falar button {
+        font-size: 12px; /* Ajusta o tamanho da fonte para botões */
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo-principal h1 {
+        font-size: 36px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    .titulo-principal p {
+        font-size: 10px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    .falar button {
+        font-size: 10px; /* Ajusta o tamanho da fonte para botões */
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo-principal h1 {
+        font-size: 28px; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    }
+
+    .titulo-principal p {
+        font-size: 8px; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    }
+
+    .falar button {
+        font-size: 8px; /* Ajusta o tamanho da fonte para botões */
+    }
+}
