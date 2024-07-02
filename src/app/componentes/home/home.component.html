@@ -231,33 +231,53 @@
         <div class="duvida">
             <h1 class="titulo-duvida">Ficou alguma dúvida?</h1>
             <img src="../../../assets/imagens/divisoria.png" alt="">
-            <div class="pergunta">
+            <div class="pergunta" (click)="toggleResposta('resposta1')">
                 <h1>01</h1>
-                <p>Como posso atualizar meu site após o lançamento?</p>
+                <p>Como posso atualizar meu site após o lançamento? <span>+</span></p>
+            </div>
+            
+            <div class="resposta" [ngClass]="{'expandir': respostas['resposta1']}">
+                <p>Após o lançamento do seu site, você terá acesso a um painel de controle intuitivo que permite atualizar facilmente o conteúdo, adicionar novas páginas, fazer upload de imagens e muito mais. Se preferir, nossa equipe também pode fornecer suporte contínuo para garantir que seu site esteja sempre atualizado e otimizado.</p>
             </div>
 
             <img src="../../../assets/imagens/divisoria.png" alt="">
-            <div class="pergunta">
+            <div class="pergunta" (click)="toggleResposta('resposta2')">
                 <h1>02</h1>
-                <p>Vocês oferecem suporte técnico após a conclusão do projeto?p>
+                <p>Vocês oferecem suporte técnico após a conclusão do projeto? <span>+</span></p>
+            </div>
+
+            <div class="resposta" [ngClass]="{'expandir': respostas['resposta2']}">
+                <p>Sim, oferecemos suporte técnico contínuo após a conclusão do projeto. Nossa equipe está disponível para ajudar com qualquer problema técnico, atualizações de conteúdo, integração de novas funcionalidades e muito mais. Você pode entrar em contato conosco a qualquer momento para obter assistência.</p>
             </div>
 
             <img src="../../../assets/imagens/divisoria.png" alt="">
-            <div class="pergunta">
+            <div class="pergunta" (click)="toggleResposta('resposta3')">
                 <h1>03</h1>
-                <p>Quanto tempo leva para desenvolver um site personalizado?</p>
+                <p>Quanto tempo leva para desenvolver um site personalizado? <span>+</span></p>
+            </div>
+
+            <div class="resposta" [ngClass]="{'expandir': respostas['resposta3']}">
+                <p>O tempo de desenvolvimento de um site personalizado pode variar dependendo da complexidade do projeto, do número de páginas, das funcionalidades específicas e dos requisitos de design. Em média, o processo de desenvolvimento pode levar de 4 a 8 semanas, mas nossa equipe trabalha diligentemente para garantir que seu site seja lançado o mais rápido possível, sem comprometer a qualidade.</p>
             </div>
 
             <img src="../../../assets/imagens/divisoria.png" alt="">
-            <div class="pergunta">
+            <div class="pergunta" (click)="toggleResposta('resposta4')">
                 <h1>04</h1>
-                <p>Qual é o custo médio para criar um site do zero?</p>
+                <p>Qual é o custo médio para criar um site do zero? <span>+</span></p>
+            </div>
+
+            <div class="resposta" [ngClass]="{'expandir': respostas['resposta4']}">
+                <p>O custo de criar um site do zero pode variar dependendo das necessidades específicas do projeto, do escopo de trabalho, das funcionalidades desejadas e do design personalizado. Nossa equipe trabalha com você para entender suas metas e orçamento, e fornecer uma proposta personalizada que atenda às suas necessidades e expectativas.<p>
             </div>
 
             <img src="../../../assets/imagens/divisoria.png" alt="">
-            <div class="pergunta">
+            <div class="pergunta" (click)="toggleResposta('resposta5')">
                 <h1>05</h1>
-                <p>Meu site será otimizado para dispositivos móveis?</p>
+                <p>Meu site será otimizado para dispositivos móveis? <span>+</span></p>
+            </div>
+
+            <div class="resposta" [ngClass]="{'expandir': respostas['resposta5']}">
+                <p>Sim, todos os sites que desenvolvemos são otimizados para dispositivos móveis, garantindo uma experiência de usuário consistente e de alta qualidade em smartphones, tablets e outros dispositivos móveis. Isso não só melhora a usabilidade do seu site, mas também ajuda a melhorar sua classificação nos motores de busca.</p>
             </div>
         </div>
 
@@ -288,5 +308,23 @@
         </div>
     </div>
 
+    <div class="rodape">
+        <div class="conteudo-rodape">
+            <div class="logo-rodape">
+                <img src="../../../assets/imagens/nextech.png" alt="">
+            </div>
+    
+            <div class="copy">
+                <p>© 2024 Nextech. Todos os direitos reservados.</p>
+            </div>
+    
+            <div class="redes-sociais">
+                <img src="../../../assets/imagens/redes/face.png" alt="">
+                <img src="../../../assets/imagens/redes/linkedin.png" alt="">
+                <img src="../../../assets/imagens/redes/whats.png" alt="">
+            </div>
+        </div>
+        
+    </div>
     
 </div>

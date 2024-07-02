@@ -164,6 +164,7 @@
 .cards-equipe{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
 }
 
@@ -184,6 +185,7 @@
     max-width: var(--width);
     margin: auto;
     gap: 34px;
+    flex-wrap: wrap;
     /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
@@ -357,14 +359,14 @@
     align-items: center;
     margin: auto;
     justify-content: center;
-    margin-top: 50px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .conteudo-moderno{
-    background-image: url('../../../assets/imagens/bola_esquerda.png'), url('../../../assets/imagens/bola.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, center right;
+    background-image: url('../../../assets/imagens/bola_esquerda.png'), url('../../../assets/imagens/bola.png'), url('../../../assets/imagens/bola_esquerda.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, center right, bottom left;
     background-size: 500px;
     position: relative;
     z-index: 2; 
@@ -427,6 +429,7 @@
     flex-direction: column;
     max-width: 30%;
     padding: 30px;
+    min-width: 255px;
 }
 
 .card-cliente .topo{
@@ -513,6 +516,7 @@
     display: flex;
     margin-top: 35px;
     margin-bottom: 35px;
+    cursor: pointer;
 }
 
 .pergunta h1{
@@ -531,6 +535,14 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: flex-start;
+}
+
+.pergunta span{
+    font-size: 21px;
 }
 
 .svg{
@@ -546,6 +558,7 @@
     width: 66%;
     margin: auto;
     justify-content: flex-end;
+    padding-bottom: 124px;
 }
 
 .contato .bloco-esquerda h1{
@@ -593,7 +606,7 @@ input{
 .inputs-segunda-linha button{
     border-radius: 112.195px;
     background: #7000FF;
-    padding: 13.463px 26.927px;
+    padding: 0px 25px;
     border: none;
     color: white;
     height: 40px;
@@ -605,6 +618,46 @@ input{
     position: relative;
 }
 
+.resposta {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.resposta p{
+    color: white;
+}
+
+.resposta.expandir {
+    max-height: 200px; /* Ajuste conforme necessário */
+}
+
+.rodape{
+    background: #231E2E;
+    height: 123px;
+}
+
+.conteudo-rodape{
+    max-width: var(--width);
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    height: 100%;
+}
+
+.copy p{
+    color: #586280;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136.523%; /* 16.383px */
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 20px;
+}
 /* Media queries para textos responsivos */
 
 @media (max-width: 1780px) {
@@ -620,6 +673,19 @@ input{
 @media (max-width: 1400px) {
     .fundo3{
         opacity: 0.4;
+    }
+
+    .bloco-direita{
+        display: none;
+    }
+
+    .contato{
+        justify-content: center;
+    }
+
+    .contato svg{
+        width: 100%;
+        padding: 0px 30px;
     }
 }
 
