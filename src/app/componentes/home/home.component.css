@@ -55,7 +55,9 @@
 .container {
     background-image: url('../../../assets/imagens/bola_direita.png');
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top right 10px; /* Mova a imagem 10 pixels para a esquerda */
+
+    background-size: 580px;
     position: relative; /* Adicione isso para garantir que o container tenha um contexto adequado */
     z-index: 2; /* Garanta que o container esteja atrás dos textos e imagens de fundo */
 }
@@ -108,7 +110,7 @@
 }
 
 .fundo5 {
-    bottom: 0;
+    top: 259px;
     right: 0;
 }
 
@@ -119,6 +121,273 @@
     gap: 10px;
 }
 
+.equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: var(--width);
+    margin: auto;
+}
+
+.equipe h1{
+    color: white;
+}
+
+.card{
+    margin: 31px 0;
+    border: 0.5px solid #222222;
+    padding: 32px 75px 32px 32px;
+    border-radius: 14px;
+    width: 384px;
+}
+
+.card img{
+    margin-bottom: 18px;
+}
+
+.card h1{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+
+}
+
+
+.card p{
+    color: #A1A1A1;
+    line-height: 19.2px;
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+.cards-equipe{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.diferencial{
+    color: #595959;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 124px;
+}
+
+.projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 124px;
+    max-width: var(--width);
+    margin: auto;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+#projeto1{
+    margin-bottom: 43px;
+}
+
+.texto-projetos h1{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.texto-projetos p{
+    color: #A1A1A1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imagens-projeto{
+    padding: 30px 140px 0px 140px;
+    background: rgb(16 17 21 / 55%);
+}
+
+.texto-linha{
+    display: flex;
+}
+
+.texto-linha p{
+    color: #A1A1A1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.meio{
+    margin-left: 60px;
+    margin-right: 55px;
+
+}
+
+.inspirese{
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.linha{
+    margin-bottom: 18px;
+}
+
+.falar-projeto{
+    border-radius: 112.195px;
+    background: #7000FF;
+    padding: 13.463px 26.927px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 24px;
+}
+
+.conteudo-por-equipe {
+    background-image: url('../../../assets/imagens/bola_esquerda.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    z-index: 2; 
+    padding-bottom: 165px;
+}
+
+
+.etapas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: var(--width);
+    margin: auto;
+    margin-top: 124px;
+}
+
+.etapas img{
+    width: 100%;
+    max-width: 1300px;
+}
+
+.etapas-container {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 211px;
+    margin-top: 124px;
+}
+
+.linha-curva {
+    width: 100%;
+    height: auto;
+}
+
+.stape {
+    position: absolute;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stape1 {
+    top: -24px;
+    left: 9%;
+}
+
+.stape2 {
+    top: 90px;
+    left: 27%;
+}
+
+.stape3 {
+    top: -24px;
+    left: 49%;
+}
+
+.stape4 {
+    top: 90px;
+    left: 70%;
+}
+
+.stape h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 91px;
+}
+
+.stape h2{
+    color: #7000FF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stape p{
+    color: #B3B3B3;
+    text-align: center;
+    font-size: 15.666px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 18.473px; /* 117.917% */
+    width: 195px;
+    margin-top: 13px;
+}
+
+.moderno{
+    display: flex;
+    max-width: var(--width);
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.conteudo-moderno{
+    background-image: url('../../../assets/imagens/bola_esquerda.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 500px;
+    position: relative;
+    z-index: 2; 
+}
+
+.texto-pc{
+    max-width: 525px;
+}
+
+.texto-pc h1{
+    color: #FFF;
+    max-width: 505px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.texto-pc p{
+    color: #A1A1A1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 /* Media queries para textos responsivos */
 
 @media (max-width: 1780px) {
@@ -192,3 +461,5 @@
         font-size: 8px; /* Ajusta o tamanho da fonte para botões */
     }
 }
+
+
