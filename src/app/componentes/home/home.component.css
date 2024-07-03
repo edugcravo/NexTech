@@ -718,8 +718,35 @@ input{
 }
 
 @media (max-width: 600px) {
+    .fundo2, .fundo1{
+        display: none;
+    }
+
     .titulo-principal h1 {
+        line-height: unset;
         font-size: 36px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    .cards-equipe{
+        gap: 0px;
+    }
+
+    .cards-clientes{
+        padding-bottom: 0px;
+        margin-bottom: 124px;
+        overflow: auto;
+    }
+
+    .imagens-projeto{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .contato svg{
+        display: none;
+    }
+
+    .inputs{
+        display: flex;
     }
 
     .titulo-principal p {
