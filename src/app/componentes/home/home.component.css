@@ -734,10 +734,14 @@ input{
 
 .mobile{
     display: none;
-
 }
 
 @media (max-width: 600px) {
+
+    .mobile{
+        display: unset;
+    }
+    
     /* etapas */
     .desktop{
         display: none;
@@ -902,6 +906,10 @@ input{
 
     .fundo5{
         opacity: 0.1;
+    }
+
+    .card{
+        margin: 15px 0px;
     }
 }
 
