@@ -595,7 +595,7 @@ input{
     font-weight: 300;
     line-height: normal;
     border: none;
-    padding: 12px 29px;
+    padding: 12px 0px 12px 29px;
     margin-right: 12px;
 }
 
@@ -672,7 +672,7 @@ input{
 
 @media (max-width: 1400px) {
     .fundo3{
-        opacity: 0.4;
+        opacity: 0.1;
     }
 
     .bloco-direita{
@@ -717,9 +717,80 @@ input{
     }
 }
 
+.linha-vertical{
+    width: 2px;
+    height: 300px;
+    background: #5C5B5A;
+
+}
+
+.etapas-mobile1 h1{
+    color: white;
+}
+
+.etapas-mobile1 p{
+    color: white;
+}
+
+.mobile{
+    display: none;
+
+}
+
 @media (max-width: 600px) {
+    /* etapas */
+    .desktop{
+        display: none;
+    }
+
+
+    .stape {
+        width: 50%;
+    }
+
+    .stape1{
+        top: 138px;
+        left: 7%;
+    }
+
+    .stape2{
+        top: 400px;
+        left: 45%;
+    }
+
+    .stape3{
+        top: 680px;
+        left: 7%;
+    }
+
+    .stape4{
+        top: 1000px;
+        left: 45%;
+    }
+
+    .stape h1{
+        margin-bottom: 10px;
+    }
+    
+    .conteudo-por-equipe, .etapas-container{
+        padding-bottom: 0px;
+    }
+
+    .moderno{
+        text-align: center;
+    }
+  
+    .img-pc img{
+        min-width: 100px;
+    }
+
     .fundo2, .fundo1{
         display: none;
+    }
+
+    .projetos{
+        flex-direction: column-reverse;
+        max-width: 100%;
     }
 
     .titulo-principal h1 {
@@ -755,6 +826,82 @@ input{
 
     .falar button {
         font-size: 10px; /* Ajusta o tamanho da fonte para botões */
+    }
+
+
+    .linha{
+        width: 100%;
+    }
+
+    .texto-projetos{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-projetos h1{
+        text-align: center;
+    }
+
+    .texto-linha{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .meio{
+        margin-left: 0px;
+        margin-right: 0px;
+    
+    }
+
+    .quebra{
+        display: none;
+    }
+
+    .bloco-esquerda{
+        right: 0px;
+        text-align: center;
+    }
+
+    .contato{
+        display: block;
+        width: var(--mobile-width);
+    }
+
+    .clientes, .moderno{
+        max-width: var(--mobile-width);
+    }
+
+    .clientes{
+        margin-top: 100px;
+    }
+
+    .titulo-duvida, .pq{
+        text-align: center;
+    }
+
+    .pq{
+        margin-top: 50px;
+    }
+
+    .redes-sociais{
+        gap: 2px;
+    }
+
+    .rodape{
+        height: 200px;
+    }
+
+    .conteudo-rodape{
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 0px;
+        justify-content: normal;
+    }
+
+    .fundo5{
+        opacity: 0.1;
     }
 }
 
