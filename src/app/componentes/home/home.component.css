@@ -211,7 +211,7 @@
 }
 
 .imagens-projeto{
-    padding: 30px 140px 30px 140px;
+    padding: 30px 140px 0px 140px;
     background: rgb(16 17 21 / 55%);
 }
 
@@ -671,6 +671,28 @@ input{
 }
 
 @media (max-width: 1400px) {
+
+    .projetos{
+        flex-direction: column-reverse;
+    }
+
+    .texto-projetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .linha{
+        width: 100%;
+    }
+
+    .primeira-quebra{
+        display: none;
+    }
+
+
+
     .fundo3{
         opacity: 0.1;
     }
@@ -715,6 +737,11 @@ input{
     .falar button {
         font-size: 12px; /* Ajusta o tamanho da fonte para botões */
     }
+
+    .contato svg{
+        display: none;
+    }
+
 }
 
 .linha-vertical{
@@ -734,6 +761,10 @@ input{
 
 .mobile{
     display: none;
+}
+
+.desktop{
+    width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -798,8 +829,8 @@ input{
     }
 
     .titulo-principal h1 {
-        line-height: unset;
-        font-size: 36px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        line-height: normal;
+        font-size: 35px; /* Ajusta o tamanho da fonte para dispositivos móveis */
     }
 
     .cards-equipe{
@@ -810,6 +841,7 @@ input{
         padding-bottom: 0px;
         margin-bottom: 124px;
         overflow: auto;
+        justify-content: normal;
     }
 
     .imagens-projeto{
@@ -825,11 +857,16 @@ input{
     }
 
     .titulo-principal p {
-        font-size: 10px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        margin-top: 10px;
+        font-size: 14px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    .titulo-principal br{
+        display: none;
     }
 
     .falar button {
-        font-size: 10px; /* Ajusta o tamanho da fonte para botões */
+        font-size: 16px; /* Ajusta o tamanho da fonte para botões */
     }
 
 
@@ -883,10 +920,6 @@ input{
 
     .titulo-duvida, .pq{
         text-align: center;
-    }
-
-    .pq{
-        margin-top: 50px;
     }
 
     .redes-sociais{

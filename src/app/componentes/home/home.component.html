@@ -26,7 +26,7 @@
             </div>
     
             <div class="entrega">
-                <button> <div></div> Entregamos em 30 dias úteis</button>
+                <button> <div></div> Entregamos em até 30 dias úteis</button>
             </div>
     
             <div class="titulo-principal">
@@ -51,21 +51,21 @@
 
             <div class="cards-equipe">
                 <div class="card">
-                    <img src="../../../assets/imagens/equipe.png" alt="">
+                    <img src="../../../assets/imagens/layout.png" alt="">
                     <h1>Layouts modernos</h1>
-                    <p>designers especializados criam <br> layouts modernos e atraentes que não <br> apenas captam a atenção.</p>
+                    <p>designers especializados criam layouts modernos e atraentes que não apenas captam a atenção.</p>
                 </div>
 
                 <div class="card">
-                    <img src="../../../assets/imagens/equipe.png" alt="">
-                    <h1>Layouts modernos</h1>
-                    <p>designers especializados criam <br> layouts modernos e atraentes que não <br> apenas captam a atenção.</p>
+                    <img src="../../../assets/imagens/codigo.png" alt="">
+                    <h1>Código eficiente</h1>
+                    <p>Nosso time de desenvolvimento utiliza práticas ágeis para entregar soluções eficientes e escaláveis.</p>
                 </div>
 
                 <div class="card">
-                    <img src="../../../assets/imagens/equipe.png" alt="">
-                    <h1>Layouts modernos</h1>
-                    <p>designers especializados criam <br> layouts modernos e atraentes que não <br> apenas captam a atenção.</p>
+                    <img src="../../../assets/imagens/atendimento.png" alt="">
+                    <h1>Atendimento personalizado</h1>
+                    <p>Valorizamos o relacionamento com nossos clientes oferecendo suporte contínuo e personalizado.</p>
                 </div>
             </div>
 
@@ -77,16 +77,16 @@
 
             <div class="imagens-projeto">
                 <div class="projeto" id="projeto1">
-                    <img src="../../../assets/imagens/projeto1.png" alt="">
+                    <img src="../../../assets/imagens/img1.png" alt="">
                 </div>
         
                 <div class="projeto">
-                    <img src="../../../assets/imagens/projeto1.png" alt="">
+                    <img src="../../../assets/imagens/img2.png" alt="">
                 </div>
             </div>
 
             <div class="texto-projetos">
-                <h1>Veja nossos <br> projetos <br class="quebra"> recentes.</h1>
+                <h1>Veja nossos <br class="primeira-quebra"> projetos <br class="quebra"> recentes.</h1>
                 <p class="inspirese">Inspire-se com nossa galeria de sucessos <br>
                     e visualize o nosso passo a passo</p>
                     <img src="../../../assets/imagens/linha.png" alt="" class="linha">
@@ -103,8 +103,8 @@
 
         <div class="etapas-container" >
 
-            <img src="../../../assets/imagens/linha-curva.png" alt="Linha Curva" class="linha-curva" class="desktop">
-            <img src="../../../assets/imagens/linha-curva-vertical.png" alt="Linha Curva" class="linha-curva" class="mobile">
+            <img src="../../../assets/imagens/linha-curva.png" alt="Linha Curva"  class="desktop">
+            <img src="../../../assets/imagens/linha-curva-vertical.png" alt="Linha Curva"  class="mobile">
 
 
             <div class="stape stape1">
@@ -296,14 +296,17 @@
             <div class="bloco-esquerda">
                 <h1>Entre em contato</h1>
                 <p>Entre em contato conosco para discutir seu próximo projeto ou para obter mais<br> informações sobre nossos serviços.</p>
-                <div class="inputs">
-                    <input type="text" placeholder="Nome">
-                    <input type="text" placeholder="Whatsapp">
-                </div>
-                <div class="inputs-segunda-linha">
-                    <input type="text" placeholder="seuemail@email.com">
-                    <button>Falar com especialista</button>
-                </div>
+                <form (ngSubmit)="enviar()" #contactForm="ngForm">
+                    <div class="inputs">
+                      <input type="text" name="nome" placeholder="Nome" [(ngModel)]="nome" required>
+                      <input type="text" name="numero" placeholder="Whatsapp" [(ngModel)]="numero" required>
+                    </div>
+                    <div class="inputs-segunda-linha">
+                      <input type="email" name="email" placeholder="seuemail@email.com" [(ngModel)]="email" required>
+                      <button type="submit">Falar com especialista</button>
+                    </div>
+
+                  </form>
             </div>
 
             <div class="bloco-direita">
