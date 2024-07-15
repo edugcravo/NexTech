@@ -50,6 +50,7 @@
     text-align: center;
     position: relative; /* Garanta que o parágrafo esteja no contexto certo */
     z-index: 1000; /* Garante que o texto esteja acima das imagens e do fundo */
+    margin-top: 15px;
 }
 
 .container {
