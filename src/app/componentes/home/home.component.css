@@ -55,7 +55,7 @@
 .container {
     background-image: url('../../../assets/imagens/bola_direita.png');
     background-repeat: no-repeat;
-    background-position: top right 10px; /* Mova a imagem 10 pixels para a esquerda */
+    background-position: top right; /* Mova a imagem 10 pixels para a esquerda */
 
     background-size: 580px;
     position: relative; /* Adicione isso para garantir que o container tenha um contexto adequado */
@@ -188,6 +188,10 @@
     flex-wrap: wrap;
     /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.projeto img{
+    width: 100%;
 }
 
 #projeto1{
@@ -580,11 +584,11 @@
     font-weight: 300;
     line-height: normal;
 }
-
+/* 
 .bloco-esquerda{
     position: relative;
     right: 30px;
-}
+} */
 
 input{
     border-radius: 48.807px;
@@ -596,11 +600,16 @@ input{
     line-height: normal;
     border: none;
     padding: 12px 0px 12px 29px;
-    margin-right: 12px;
 }
+
+.inputs{
+    gap: 15px;
+    display: flex;}
 
 .inputs-segunda-linha{
     margin-top: 12px;
+    gap: 15px;
+    display: flex;
 }
 
 .inputs-segunda-linha button{
@@ -767,7 +776,10 @@ input{
     width: 100%;
 }
 
+
 @media (max-width: 600px) {
+
+    
 
     .mobile{
         display: unset;
@@ -853,7 +865,7 @@ input{
     }
 
     .inputs{
-        display: flex;
+        flex-wrap: wrap;
     }
 
     .titulo-principal p {
@@ -946,18 +958,25 @@ input{
     }
 }
 
-@media (max-width: 400px) {
-    .titulo-principal h1 {
-        font-size: 28px; /* Ajusta o tamanho da fonte para telas muito pequenas */
+
+
+@media (max-width: 430px) {
+    .inputs{
+        flex-direction: column;
     }
 
-    .titulo-principal p {
-        font-size: 8px; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    .inputs-segunda-linha{
+        gap: 15px;
+        display: flex;
+        align-items: center;
     }
 
-    .falar button {
-        font-size: 8px; /* Ajusta o tamanho da fonte para botões */
+    .enviar{
+        width: 100%;
     }
+
 }
+
+
 
 
