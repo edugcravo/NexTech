@@ -433,7 +433,7 @@
     flex-direction: column;
     max-width: 30%;
     padding: 30px;
-    min-width: 255px;
+    min-width: 270px;
 }
 
 .card-cliente .topo{
@@ -751,6 +751,9 @@ input{
         display: none;
     }
 
+    .cards-clientes{
+    flex-wrap: wrap
+    }
 }
 
 .linha-vertical{
