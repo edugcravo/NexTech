@@ -3,11 +3,15 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 
 
+declare var ScrollReveal: any; // Declaração para evitar erros de tipo
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
+
 export class HomeComponent implements OnInit {
   
   resposta1: any = false;
@@ -22,6 +26,7 @@ export class HomeComponent implements OnInit {
   email: string = '';
   message: string = '';
   isSuccess: boolean = false;
+  
 
   constructor(private http: HttpClient) {}
 
@@ -59,9 +64,84 @@ export class HomeComponent implements OnInit {
         this.isSuccess = false;
       }
     );
+    
   }
+
   ngOnInit() {
-   
+    // Configuração do ScrollReveal
+    ScrollReveal().reveal('.fundo1', {
+      duration: 2000,
+      origin: 'left',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.fundo2', {
+      duration: 2000,
+      origin: 'right',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.fundo3', {
+      duration: 2000,
+      origin: 'left',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.fundo4', {
+      duration: 2000,
+      origin: 'right',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.fundo5', {
+      duration: 2000,
+      origin: 'left',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.cards-equipe', {
+      duration: 2000,
+      origin: 'left',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.projetos', {
+      duration: 2000,
+      origin: 'right',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.etapas-container', {
+      duration: 2000,
+      origin: 'right',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.moderno', {
+      duration: 2000,
+      origin: 'left',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.clientes', {
+      duration: 2000,
+      origin: 'right',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.duvida', {
+      duration: 2000,
+      origin: 'left',
+      distance: '100px'
+    });
+
+    ScrollReveal().reveal('.contato', {
+      duration: 2000,
+      origin: 'right',
+      distance: '100px'
+    });
+
+    
   }
 
   respostas: { [key: string]: boolean } = {

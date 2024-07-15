@@ -20,6 +20,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgsRevealModule } from 'ngx-scrollreveal';
  // Import the SlickCarouselModule from the correct package
 
 
@@ -44,8 +45,7 @@ import { BrowserModule } from '@angular/platform-browser';
         NzModalModule,
         MatIconModule,
         MatButtonToggleModule,
-        MatTooltipModule
-        
+        MatTooltipModule,
     ],
     providers: [
     
