@@ -34,6 +34,10 @@
     gap: 5px;
 }
 
+.destaque{
+    color: #7000FF;
+}
+
 .titulo-principal h1 {
     color: white;
     font-size: 64px; /* Tamanho padrão para resoluções grandes */
