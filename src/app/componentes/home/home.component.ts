@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
 
     ScrollReveal().reveal('.fundo2', {
       duration: 2000,
-      origin: 'right',
+      origin: 'left',
       distance: '100px'
     });
 
@@ -89,7 +89,7 @@ export class HomeComponent implements OnInit {
 
     ScrollReveal().reveal('.fundo4', {
       duration: 2000,
-      origin: 'right',
+      origin: 'left',
       distance: '100px'
     });
 
@@ -107,13 +107,13 @@ export class HomeComponent implements OnInit {
 
     ScrollReveal().reveal('.projetos', {
       duration: 2000,
-      origin: 'right',
+      origin: 'left',
       distance: '100px'
     });
 
     ScrollReveal().reveal('.etapas-container', {
       duration: 2000,
-      origin: 'right',
+      origin: 'left',
       distance: '100px'
     });
 
@@ -125,7 +125,7 @@ export class HomeComponent implements OnInit {
 
     ScrollReveal().reveal('.clientes', {
       duration: 2000,
-      origin: 'right',
+      origin: 'left',
       distance: '100px'
     });
 
@@ -137,7 +137,7 @@ export class HomeComponent implements OnInit {
 
     ScrollReveal().reveal('.contato', {
       duration: 2000,
-      origin: 'right',
+      origin: 'left',
       distance: '100px'
     });
 

@@ -1,13 +1,21 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
+
+
 
 .logo {
     margin-top: 60px;
     margin-bottom: 40px;
     position: relative; /* Adicione isso se ainda não estiver definido */
     z-index: 3; /* Garanta que esteja acima das outras camadas */
+}
+
+.fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .cards-equipe, .projetos, .etapas-container, .moderno, .clientes, .duvida, .contato {
+    position: relative; /* Ajuste a posição conforme necessário */
+    transform: none; /* Verifique se a transformação está aplicada corretamente */
 }
 
 .entrega button {
