@@ -756,9 +756,7 @@ input{
         display: none;
     }
 
-    .cards-clientes{
-    flex-wrap: wrap
-    }
+   
 }
 
 .linha-vertical{
@@ -787,7 +785,9 @@ input{
 
 @media (max-width: 600px) {
 
-    
+    .titulo-principal{
+        padding: 0px 10px;
+    }
 
     .mobile{
         display: unset;
