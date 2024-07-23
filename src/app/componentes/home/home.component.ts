@@ -68,6 +68,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    
     // Configuração do ScrollReveal
     ScrollReveal().reveal('.fundo1', {
       duration: 2000,
