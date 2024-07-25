@@ -70,35 +70,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     
     // Configuração do ScrollReveal
-    ScrollReveal().reveal('.fundo1', {
+
+    ScrollReveal().reveal('.titulo-principal', {
       duration: 2000,
       origin: 'left',
       distance: '100px'
     });
 
-    ScrollReveal().reveal('.fundo2', {
-      duration: 2000,
-      origin: 'left',
-      distance: '100px'
-    });
-
-    ScrollReveal().reveal('.fundo3', {
-      duration: 2000,
-      origin: 'left',
-      distance: '100px'
-    });
-
-    ScrollReveal().reveal('.fundo4', {
-      duration: 2000,
-      origin: 'left',
-      distance: '100px'
-    });
-
-    ScrollReveal().reveal('.fundo5', {
-      duration: 2000,
-      origin: 'left',
-      distance: '100px'
-    });
 
     ScrollReveal().reveal('.cards-equipe', {
       duration: 2000,
