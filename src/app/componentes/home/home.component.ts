@@ -152,4 +152,11 @@ export class HomeComponent implements OnInit {
   toggleResposta(resposta: string) {
     this.respostas[resposta] = !this.respostas[resposta];
   }
+
+  redirecionarWhatsapp() {
+    // preparar mensagem
+    const mensagem = `Olá, estou interessado em saber mais sobre os serviços da empresa.`;
+    // redirecionar para o whatsapp
+    window.open(`https://wa.me/5541992213199?text=${mensagem}`, '_blank');
+  }
 }
