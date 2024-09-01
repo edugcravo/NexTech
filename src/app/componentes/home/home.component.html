@@ -27,7 +27,7 @@
             </div>
     
             <div class="entrega">
-                <button> <div></div> Entregamos em até 30 dias úteis</button>
+                <button> <div></div> Hospedagem e domínio gratuitos por 1 ano</button>
             </div>
             
     
@@ -291,24 +291,23 @@
 
         <div class="contato">
 
-            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="1080" height="311" viewBox="0 0 1080 311" fill="none">
-                <path d="M0.25 62.0747C0.25 51.2194 0.250194 43.093 0.777115 36.6437C1.3038 30.1975 2.35548 25.4489 4.44632 21.3454C8.1375 14.1011 14.0273 8.21123 21.2717 4.52005C25.3752 2.42921 30.1237 1.37753 36.57 0.850846C43.0192 0.323925 51.1457 0.32373 62.001 0.32373H1018C1028.85 0.32373 1036.98 0.323925 1043.43 0.850846C1049.88 1.37753 1054.62 2.42921 1058.73 4.52005C1065.97 8.21123 1071.86 14.1011 1075.55 21.3454C1077.64 25.4489 1078.7 30.1975 1079.22 36.6437C1079.75 43.093 1079.75 51.2194 1079.75 62.0747V248.073C1079.75 258.928 1079.75 267.055 1079.22 273.504C1078.7 279.95 1077.64 284.699 1075.55 288.802C1071.86 296.046 1065.97 301.936 1058.73 305.627C1054.62 307.718 1049.88 308.77 1043.43 309.297C1036.98 309.824 1028.85 309.824 1018 309.824H62.001C51.1457 309.824 43.0192 309.824 36.57 309.297C30.1237 308.77 25.3752 307.718 21.2717 305.627C14.0273 301.936 8.1375 296.046 4.44632 288.802C2.35548 284.699 1.3038 279.95 0.777115 273.504C0.250194 267.055 0.25 258.928 0.25 248.073V62.0747Z" fill="black" fill-opacity="0.12" stroke="#222222" stroke-width="0.5"/>
-              </svg>
-
+           <!-- SVG Element -->
+           <img class="svg" src="assets/imagens/retangulo.png" alt="">
+            
+            <!-- Formulário -->
             <div class="bloco-esquerda">
                 <h1>Entre em contato</h1>
                 <p>Entre em contato conosco para discutir seu próximo projeto ou para obter mais<br> informações sobre nossos serviços.</p>
-                <form (ngSubmit)="enviar()" #contactForm="ngForm">
-                    <div class="inputs">
-                      <input type="text" name="nome" placeholder="Nome" [(ngModel)]="nome" required>
-                      <input type="text" name="numero" placeholder="Whatsapp" [(ngModel)]="numero" required>
-                    </div>
-                    <div class="inputs-segunda-linha">
-                      <input type="email" name="email" placeholder="seuemail@email.com" [(ngModel)]="email" required>
-                      <button type="submit" class="enviar">Enviar</button>
-                    </div>
-
-                  </form>
+                <form (ngSubmit)="enviar()" #contactForm="ngForm" class="form-container">
+                <div class="inputs">
+                    <input type="text" name="nome" placeholder="Nome" [(ngModel)]="nome" required>
+                    <input type="text" name="numero" placeholder="Whatsapp" [(ngModel)]="numero" required>
+                </div>
+                <div class="inputs-segunda-linha">
+                    <input type="email" name="email" placeholder="seuemail@email.com" [(ngModel)]="email" required>
+                    <button type="submit" class="enviar">Enviar</button>
+                </div>
+                </form>
             </div>
 
             <div class="bloco-direita">
