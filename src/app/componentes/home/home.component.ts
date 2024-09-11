@@ -135,6 +135,6 @@ export class HomeComponent implements OnInit {
     // preparar mensagem
     const mensagem = `Olá, estou interessado em saber mais sobre os serviços da empresa.`;
     // redirecionar para o whatsapp
-    window.open(`https://wa.me/5541992213199?text=${mensagem}`, '_blank');
+    window.open(`https://wa.me/5541999441915?text=${mensagem}`, '_blank');
   }
 }
